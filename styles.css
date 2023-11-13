@@ -1,0 +1,239 @@
+/* Line 13: Disallow use of box-sizing
+   Description: The box-sizing property isn't supported in IE6 and IE7. */
+/* Corrected box-sizing property to 'content-box' */
+body {
+    font-family: 'YourCustomFont', sans-serif;
+    background:
+        url('pic/background-image1.jpeg') top left no-repeat,
+        url('pic/background-image2.jpeg') bottom right no-repeat;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: content-box; /* Corrected box-sizing property */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    background-color: #1A120B;
+    margin-left: 30px;
+}
+
+#header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #D5CEA3;
+}
+
+nav {
+    background-color: #1A120B;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #D5CEA3;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #E5E5CB;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    max-width: 800px;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: content-box; /* Corrected box-sizing property */
+    text-align: justify;
+    color: #D5CEA3;
+}
+
+footer {
+    background-color: #1A120B;
+    padding: 10px;
+    color: #D5CEA3;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+#footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    order: 1;
+    margin-right: 20px;
+}
+
+#logo img {
+    max-width: 50px;
+    height: auto;
+    margin: 5px; /* Corrected margin with the appropriate unit (e.g., pixels) */
+}
+
+#company-info {
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 20px;
+}
+
+#company-info p {
+    margin: 5px; /* Corrected margin with the appropriate unit (e.g., pixels) */
+}
+
+#dark-chocolate-images img {
+    transition: transform 0.3s ease-in-out;
+}
+
+#dark-chocolate-images img:hover {
+    transform: scale(1.1);
+}
+
+.gallery-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #D5CEA3;
+}
+
+.gallery-slide {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery-image {
+    max-width: 100%;
+    display: none;
+}
+
+.gallery-description {
+    color: #D5CEA3;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.gallery-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.gallery-button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #1A120B;
+    color: #D5CEA3;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.gallery-button:hover {
+    background-color: #3C2A21;
+}
+
+.gallery-item-image {
+    max-width: 100%;
+    border: 2px solid #080808;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: filter 0.5s ease-in-out;
+    margin-bottom: 20px;
+    filter: brightness(90%);
+}
+
+.gallery-item-image:hover {
+    filter: brightness(150%);
+}
+
+.gallery-item-description {
+    color: #D5CEA3;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.gallery-item-description:hover {
+    color: #1A120B;
+    background-color: #807a51;
+    border-radius: 10px;
+    filter: brightness(150%);
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form h3 {
+    color: #D5CEA3;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    grid-gap: 15px;
+}
+
+label {
+    display: block;
+    color: #D5CEA3;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #D5CEA3;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #1A120B;
+    color: #D5CEA3;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #3C2A21;
+}
